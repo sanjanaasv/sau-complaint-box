@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAU Complaint Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SAU Complaint Box</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#complaint">Submit Complaint</a>
+        <a href="#track">Track Complaint</a>
+        <a href="#help">Help</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <p>SOUTH ASIAN UNIVERSITY</p>
+
+    <h1>Your Voice.<br>Your Campus. <span>Your SAU.</span></h1>
+
+    <p>
+        A simple platform for students to report concerns,
+        submit complaints and track their progress.
+    </p>
+
+    <a href="#complaint" class="btn">Submit a Complaint</a>
+    <a href="#track" class="btn secondary">Track Complaint</a>
+</section>
+
+<section class="section" id="complaint">
+    <h2>Submit a Complaint</h2>
+    <p>Tell us about your concern</p>
+
+    <form id="complaintForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="text" id="studentId" placeholder="Student ID" required>
+
+        <input type="email" id="email" placeholder="University Email" required>
+
+        <input type="text" id="department" placeholder="Department" required>
+
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option>Academic</option>
+            <option>Hostel</option>
+            <option>Library</option>
+            <option>IT / Wi-Fi</option>
+            <option>Administration</option>
+            <option>Campus Facilities</option>
+            <option>Security</option>
+            <option>Other</option>
+        </select>
+
+        <input type="text" id="subject" placeholder="Complaint Subject" required>
+
+        <textarea id="description"
+            placeholder="Describe your complaint..."
+            required></textarea>
+
+        <select id="priority" required>
+            <option value="">Select Priority</option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+            <option>Urgent</option>
+        </select>
+
+        <button type="submit" class="btn">
+            Submit Complaint
+        </button>
+
+    </form>
+
+    <div id="success"></div>
+</section>
+
+<section class="section" id="track">
+
+    <h2>Track Your Complaint</h2>
+    <p>Enter your complaint ID</p>
+
+    <input type="text" id="trackId"
+        placeholder="Example: SAU-2026-1234">
+
+    <button onclick="trackComplaint()" class="btn">
+        Track
+    </button>
+
+    <div id="result"></div>
+
+</section>
+
+<section class="section" id="help">
+
+    <h2>How It Works</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>01</h3>
+            <h3>Submit</h3>
+            <p>Tell us about your concern.</p>
+        </div>
+
+        <div class="card">
+            <h3>02</h3>
+            <h3>Track</h3>
+            <p>Use your complaint ID to track progress.</p>
+        </div>
+
+        <div class="card">
+            <h3>03</h3>
+            <h3>Resolve</h3>
+            <p>Stay updated until your complaint is resolved.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>SAU Complaint Box</h3>
+    <p>Student feedback and complaint portal</p>
+    <p>© 2026 SAU Complaint Box</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
